@@ -1,4 +1,8 @@
 'use strict';
+// connections to actual database
+// loading the database models
+// establishing relationships 
+// exporting the setup to be used in other files
 
 const fs = require('fs');
 const path = require('path');

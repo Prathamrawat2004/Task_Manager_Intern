@@ -48,13 +48,7 @@ function Navbar() {
     localStorage.removeItem("userInfo");
     navigate("/login");
   };
-  // const [userInfo,setUserInfo]=useState('')
-  // useEffect(() => {
-  //   const userInfo = JSON.parse(localStorage.getItem('userInfo'))
-  //   if(!userInfo){
-  //     navigate('/login')
-  //   }
-  // }, []);
+  
   return (
     <AppBar
       position="fixed"

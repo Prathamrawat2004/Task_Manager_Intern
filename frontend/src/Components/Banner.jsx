@@ -10,7 +10,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import img from "../assets/img.jpg";
+import img from "../assets/black.avif";
 
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -120,7 +120,28 @@ const Banner = () => {
           borderRadius: ".5rem",
         }}
       />
-      <ShakeText>WELCOME TO TASK MANAGER</ShakeText>
+      <Box
+  sx={{
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    zIndex: 2, // Ensures it's above the background
+  }}
+>
+  <Typography
+    variant="h4"
+    sx={{
+      color: "#fff",
+      fontWeight: 800,
+      fontFamily: "monospace",
+      textAlign: "center",
+    }}
+  >
+    WELCOME TO TASK MANAGER
+  </Typography>
+</Box>
+
       <Box
         sx={{
           position: "absolute",
@@ -140,16 +161,7 @@ const Banner = () => {
             flex: "1",
           }}
         >
-          <Typography
-            sx={{
-              color: "#fff",
-              marginBottom: "5px",
-              margin: "10px",
-              fontFamily: "monospace",
-            }}
-          >
-            ADD YOUR TASKS
-          </Typography>
+          
           <Button
             variant="contained"
             sx={{
@@ -157,7 +169,7 @@ const Banner = () => {
               backgroundColor: "#C2C2C2",
               boxShadow: "5px 5px 15px rgba(190, 133, 255,1)",
               width: "70px",
-              marginRight: { xs: "50px" },
+              marginRight: { xs: "-150px" },
             }}
             onClick={handleOpen}
           >

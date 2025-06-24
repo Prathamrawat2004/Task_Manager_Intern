@@ -4,10 +4,10 @@ import image from "../assets/img.jpg";
 import { useTheme } from "@emotion/react";
 import { Link } from "react-router-dom";
 const ErrorPage = () => {
-    const theme = useTheme();
+  const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <Box sx={{ position: "relative", height: "100vh" , overflow: "hidden" }}>
+    <Box sx={{ position: "relative", height: "100vh", overflow: "hidden" }}>
       <img
         src={image}
         alt="Placeholder"
@@ -78,7 +78,7 @@ const ErrorPage = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ErrorPage
+export default ErrorPage;

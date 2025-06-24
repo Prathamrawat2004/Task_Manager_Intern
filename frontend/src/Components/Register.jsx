@@ -24,16 +24,7 @@ import { useFormik } from "formik";
 import { userRegisterSchema } from "../utils/validation";
 const Register = () => {
   const navigate = useNavigate();
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [mobile, setMobile] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
-  // console.log(name);
-  // console.log(email);
-  // console.log(mobile);
-  // console.log(password);
-  // console.log(confirmPassword);
+  
   const initialValues = {
     name: "",
     mobile: "",

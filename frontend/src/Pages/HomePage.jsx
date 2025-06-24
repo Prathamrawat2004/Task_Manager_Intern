@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Layouts/Navbar'
 import Body from '../Components/Body'
-import Footer from '../Layouts/Footer'
+
 import Banner from '../Components/Banner'
 
 const HomePage = () => {
@@ -10,7 +10,7 @@ const HomePage = () => {
       <Navbar/>
       <Banner/>
       <Body/>
-      <Footer/>
+      
     </>
   )
 }
